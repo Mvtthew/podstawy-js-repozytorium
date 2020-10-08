@@ -1,0 +1,22 @@
+{
+  "name": "podstawy-js-repozytorium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mvtthew/podstawy-js-repozytorium.git"
+  },
+  "author": "Mateusz Ozog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mvtthew/podstawy-js-repozytorium/issues"
+  },
+  "homepage": "https://github.com/Mvtthew/podstawy-js-repozytorium#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
+}
