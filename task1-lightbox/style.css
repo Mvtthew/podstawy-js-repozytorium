@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222831;
+  width: 100%;
+  font-family: 'Mukta';
+}
+
+.title {
+  width: calc(100% - 6rem);
+  padding: 3rem;
+}
+
+.title h1,
+.title h2 {
+  color: white;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #b55400;
+}
+
+.title h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.gallery {
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-box-shadow: 0 0 0 0 #b55400;
+          box-shadow: 0 0 0 0 #b55400;
+}
+
+.gallery .image:hover {
+  -webkit-transform: translate(-4px, -4px);
+          transform: translate(-4px, -4px);
+  -webkit-box-shadow: 4px 4px 0 0 #b55400;
+          box-shadow: 4px 4px 0 0 #b55400;
+}
+
+.gallery .image:active {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+  -webkit-box-shadow: 3px 3px 0 0 #b55400;
+          box-shadow: 3px 3px 0 0 #b55400;
+}
+
+.light-box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.light-box.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.light-box.show .bg {
+  opacity: 1;
+}
+
+.light-box .image {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 7px 7px 0 0 #b55400;
+          box-shadow: 7px 7px 0 0 #b55400;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: 2;
+}
+
+.light-box .bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.light-box .close {
+  position: absolute;
+  z-index: 2;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  background-color: #eeeeee;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-box-shadow: 0 0 0 0 #b55400;
+          box-shadow: 0 0 0 0 #b55400;
+}
+
+.light-box .close:hover {
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  -webkit-box-shadow: 2px 2px 0 0 #b55400;
+          box-shadow: 2px 2px 0 0 #b55400;
+}
+
+.light-box .close:active {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-box-shadow: 1px 1px 0 0 #b55400;
+          box-shadow: 1px 1px 0 0 #b55400;
+}
+/*# sourceMappingURL=style.css.map */
